@@ -3,6 +3,12 @@
 
 <p>Serviço responsavel por buscar dados no MeiliSearch</p>
 
+
+### :pushpin: Features
+
+- [x] Busca de produtos com MeiliSearch.
+- [x] Busca de produtos com MeiliSearch paginado.
+
 ### :hammer: Pré-requisitos
 
 Antes de começar será necessario iniciar o serviço principal [APP-MENUS-RESTAURANTS-JAVA](https://github.com/leonardodantas/app-menus-restaurants-java) e iniciar o arquivo docker compose do mesmo. 
@@ -26,6 +32,34 @@ http://localhost:8082/swagger-ui/index.html
 - Kafka
 - Arquitetura baseada em Clean Arch
 - MeiliSearch
+
+## Documentação da API
+
+## Produtos
+
+### Recuperar produtos
+
+```
+GET /search
+```
+
+CURL de exemplo:
+
+```
+curl -X GET "http://localhost:8082/search?q=Lanche" -H "accept: */*"
+```
+
+### Recuperar produtos páginados
+
+```
+GET /search/page/{Número da página}/size/{Tamanho da página}?q={Termo para busca}
+```
+
+CURL de exemplo:
+```
+curl -X GET "http://localhost:8082/search/page/0/size/20?q=Lanche" -H "accept: */*"
+```
+
 
 ## Tecnologias
 
