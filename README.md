@@ -5,7 +5,7 @@
 
 ### :hammer: Pré-requisitos
 
-Antes de começar será necessario iniciar o serviço principal [APP-MENUS-RESTAURANTS-JAVA] (https://github.com/leonardodantas/app-menus-restaurants-java) e iniciar o arquivo docker compose do mesmo. 
+Antes de começar será necessario iniciar o serviço principal [APP-MENUS-RESTAURANTS-JAVA](https://github.com/leonardodantas/app-menus-restaurants-java) e iniciar o arquivo docker compose do mesmo. 
 
 ### 🎲 Iniciando projeto pela primeira vez
 
